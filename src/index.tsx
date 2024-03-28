@@ -2,8 +2,15 @@ import { createRoot } from 'react-dom/client';
 
 import 'bulma/css/bulma.css';
 import '@fortawesome/fontawesome-free/css/all.css';
-import './index.scss';
+import './styles/index.scss';
 
 import { App } from './App';
+import { GlobalStateProvider } from './managment/TodoContext';
 
-createRoot(document.getElementById('root') as HTMLDivElement).render(<App />);
+const container = document.getElementById('root') as HTMLDivElement;
+
+createRoot(container).render(
+  <GlobalStateProvider>
+    <App />
+  </GlobalStateProvider>,
+);
