@@ -118,6 +118,7 @@ export const TodoItem: React.FC<Props> = ({ todo }) => {
         completed: completed === true,
       })}
     >
+      {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
       <label className="todo__status-label">
         <input
           data-cy="TodoStatus"
@@ -127,7 +128,6 @@ export const TodoItem: React.FC<Props> = ({ todo }) => {
           onChange={handleStatus}
         />
       </label>
-
       {!isEdited ? (
         <>
           <span
@@ -162,7 +162,6 @@ export const TodoItem: React.FC<Props> = ({ todo }) => {
           />
         </form>
       )}
-
       <Loader id={id} />
     </div>
   );
