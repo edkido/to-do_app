@@ -1,4 +1,4 @@
-# Todo App by Eduard Herasym (GitHub: edkido)
+# TaskBuddy App by Eduard Herasym (GitHub: edkido)
 
 A simple and intuitive Todo application built using HTML, SCSS, React, and TypeScript. This project aims to provide users with a convenient platform to manage their tasks effectively. The application follows the BEM (Block Element Modifier) naming convention for CSS classes to ensure maintainability and scalability.
 
